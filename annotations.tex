@@ -63,11 +63,36 @@ Software Testing with our notes and ACM-formatted citations.
 
 \textit{Example}
 
-\cite{lastname-year} describes a study of software testers in industry (n=200)
-and summarizes best practices in writing tests, as anecdotally observed in real
-projects. The study identifies several best practices including X and Y that are
-consistent with other studies \cite{abc} \cite{xyz} but are not empirically
-validated.
+%\cite{lastname-year} describes a study of software testers in industry (n=200)
+%and summarizes best practices in writing tests, as anecdotally observed in real
+%projects. The study identifies several best practices including X and Y that are
+%consistent with other studies \cite{abc} \cite{xyz} but are not empirically
+%validated.
+
+Goldwasser \cite{goldwasser-2002} recognizes the lack of software testing in computer science courses and
+proposes the all-pairs method of testing, where a student will submit their own tests along with
+their code and have their tests be used on their fellow classmates. The study lays out the groundwork
+for how to conduct this "gimmick" in a computer science course and discusses the types of problems it can
+be applied to. The study identifies the complication that the implementation of this method quadratically
+increases amount of work, insisting on an automated scoring system.
+
+Edwards \cite{edwards-2012} expands upon Goldwasser's implementation of software testing in computer
+science curriculum by "modernizing" the process of all-pairs testing through code transformation
+in order to overcome the problem of dependencies between student assignments. The experiment was
+conducted on two classes, CS1 and CS2, and the analysis reveals Goldwasser's "gimmick" to still be
+reliable. 
+
+Buffardi \cite{buffardi-2018} discusses the effectiveness of a technique that will introduce unit testing in a
+software engineering course. The study goes in-depth on how the game will work and conducts experiments with "between-subject" and "within-subject" variations on two semesters of students (n=87). Analysis of the data from these two semesters reveals a positive implementation on students, but doesn't warrant enough evidence that this method is superior to other methods. The study introduced all-function-pairs analysis and measurements of tests, True Positive Rate and True Negative Rate, and suggests further study on both of these. 
+
+Buffardi \cite{buffardi-jan2019} investigates how unit tests can positively verify acceptable implementations for computer science students with two phases. The first phase analyzes the relationship between mistakenly failing good implementations and passing those with bugs are investigated to identify trends in student test outcome. The second phase analyzes the all-functions-pair method and examines the student's testing outcomes. The study finds that students struggle with positive verification or fault identification, but never both simultaneously on the same functions. The study concludes that positive verification should be considered as a factor, and recognizes further study on the cost of testing.
+
+Buffardi \cite{buffardi-feb2019} seeks to compare the benefits of unit testing by comparing the test accuracy of unit testing against coverage and bug identification measurements. This study was conducted on an assignment with students (n=103) developing a class with tests for each function. The results revealed that test accuracy is a stronger assessment of unit test quality, but also finds coverage to be a significant as well. The conclusion is that accuracy has fewer risks than coverage in assessing. The study was conducted on only one assignment, so it could be expanded upon more with more assignments.
+
+Bowes \cite{bowes-2017} identifies the importance of testing in software development and intends to develop a list of principles to follow when developing and executing tests. The study compiled a list of fifteen principles from a workshop consisting of partners from industry. The list is not a definitive list of best practices to use, but hopes to aim towards an agreed upon set of principles that will be built upon. The issue at hand is the lack of discussion of how the principles were picked out in that workshop. Principles from this list that could possibly be automated are 3, 4, 6, and 8.
+
+Edwards \cite{edwards-2004} observes the problem of computer science students relying on a "trial and error" approach to fixing/debugging code and aims to have students move to a "reflection in action" approach instead. The study discusses the reasons why students stick to the inferior method of fixing code and explains the process of a test-driven development (TDD) and how it can be beneficial for students. This is tested by observing a course with and without TDD and the data reveals the overall benefits of TDD. This study can be expanded upon by ...
+
 
 \bibliographystyle{acm}
 \bibliography{references.bib}
